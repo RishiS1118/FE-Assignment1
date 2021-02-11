@@ -218,6 +218,10 @@ function positionRobot(previousCellId = undefined) {
     cellId = "cell"+robot.getPosition().x+""+robot.getPosition().y;
     var direction = robot.getDirection();
     var robotCell = document.getElementById(cellId);
+    if (robotCell.classList.contains("traversed")) {
+        robotCell.innerHTML = "";
+        robotCell.classList.remove("traversed");
+    }
     robotCell.appendChild(createRobotDiv(direction));
     robotCell.classList.add("selected");
 }
