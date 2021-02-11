@@ -1,0 +1,58 @@
+.inputConatiner{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.robot{
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+    position: relative;
+}
+
+.traversed>.robot {
+    background-image: url("doraemon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 40%;
+}
+
+.selected>.robot {
+    background-image: url("doraemon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    position: absolute;
+    padding: 3px;
+    width: 3px;
+    height: 3px;
+    right: 5px;
+    top: 5px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
